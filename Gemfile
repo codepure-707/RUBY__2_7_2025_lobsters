@@ -1,24 +1,24 @@
 source "https://rubygems.org"
 
-gem "rails"
+gem "rails", ">= 8.0.2"
 
 # database and caching
-gem "solid_cache"
+gem "solid_cache", ">= 1.0.7"
 gem "sqlite3"
 gem "trilogy"
 
 # jobs
-gem "solid_queue"
-gem "mission_control-jobs"
+gem "solid_queue", ">= 1.2.0"
+gem "mission_control-jobs", ">= 1.0.2"
 
 # rails
 gem "activerecord-typedstore"
 gem "importmap-rails", "~> 2.0"
-gem "propshaft"
-gem "scenic"
+gem "propshaft", ">= 1.2.0"
+gem "scenic", ">= 1.9.0"
 gem "scenic-mysql_adapter"
 gem "scenic_sqlite_adapter"
-gem "sentry-rails"
+gem "sentry-rails", ">= 5.25.0"
 gem "typeid"
 
 # js
@@ -66,8 +66,8 @@ group :test, :development do
   gem "listen"
   gem "letter_opener"
   gem "prism" # rm after https://github.com/presidentbeef/brakeman/issues/1909 closes
-  gem "rspec-rails"
-  gem "factory_bot_rails"
+  gem "rspec-rails", ">= 7.1.1"
+  gem "factory_bot_rails", ">= 6.5.0"
   gem "foreman"
   gem "standard"
   gem "standard-performance"
