@@ -8,12 +8,12 @@ gem "sqlite3"
 gem "trilogy"
 
 # jobs
-gem "solid_queue"
+gem "solid_queue", ">= 1.2.1"
 gem "mission_control-jobs"
 
 # rails
 gem "activerecord-typedstore"
-gem "importmap-rails", "~> 2.0"
+gem "importmap-rails", "~> 2.2", ">= 2.2.0"
 gem "propshaft"
 gem "scenic"
 gem "scenic-mysql_adapter"
