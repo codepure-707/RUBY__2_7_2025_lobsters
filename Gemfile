@@ -1,21 +1,21 @@
 source "https://rubygems.org"
 
-gem "rails"
+gem "rails", ">= 8.0.2.1"
 
 # database and caching
-gem "solid_cache"
+gem "solid_cache", ">= 1.0.7"
 gem "sqlite3"
 gem "trilogy"
 
 # jobs
-gem "solid_queue"
-gem "mission_control-jobs"
+gem "solid_queue", ">= 1.2.0"
+gem "mission_control-jobs", ">= 1.0.2"
 
 # rails
 gem "activerecord-typedstore"
 gem "importmap-rails", "~> 2.0"
 gem "propshaft"
-gem "scenic"
+gem "scenic", ">= 1.9.0"
 gem "scenic-mysql_adapter"
 gem "scenic_sqlite_adapter"
 gem "sentry-rails"
@@ -79,5 +79,5 @@ group :test, :development do
   gem "webmock" # used to support vcr
   gem "simplecov", require: false
   gem "active_record_doctor"
-  gem "database_consistency"
+  gem "database_consistency", ">= 1.7.27"
 end
