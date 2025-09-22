@@ -53,7 +53,7 @@ gem "oauth" # for linking accounts
 gem "mail" # for parsing incoming mail
 gem "sitemap_generator" # for better search engine indexing
 gem "svg-graph", require: "SVG/Graph/TimeSeries" # for charting, note workaround in lib/time_series.rb
-gem "rexml" # no release for https://github.com/lumean/svg-graph2/pull/48/files
+gem "rexml" , ">= 3.4.2" # no release for https://github.com/lumean/svg-graph2/pull/48/files
 gem "rack-attack" # rate-limiting
 gem "lograge" # for JSON logging
 gem "silencer" # to disable default logging in prod
@@ -76,7 +76,7 @@ group :test, :development do
   gem "byebug"
   gem "rb-readline"
   gem "vcr"
-  gem "webmock" # used to support vcr
+  gem "webmock" , ">= 3.25.0" # used to support vcr
   gem "simplecov", require: false
   gem "active_record_doctor"
   gem "database_consistency"
