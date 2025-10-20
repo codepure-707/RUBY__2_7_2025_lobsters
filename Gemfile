@@ -54,7 +54,7 @@ gem "mail" # for parsing incoming mail
 gem "sitemap_generator" # for better search engine indexing
 gem "svg-graph", require: "SVG/Graph/TimeSeries" # for charting, note workaround in lib/time_series.rb
 gem "rexml" # no release for https://github.com/lumean/svg-graph2/pull/48/files
-gem "rack-attack" # rate-limiting
+gem "rack-attack" , ">= 6.8.0" # rate-limiting
 gem "lograge" # for JSON logging
 gem "silencer" # to disable default logging in prod
 
